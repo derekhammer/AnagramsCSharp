@@ -18,11 +18,11 @@ namespace Anagramatical.Tests
 
 
       //Act
-      string workingResult = newAnagram.SortUserWord();
-
+      string workingResult = newAnagram.SortWord();
+      bool anagramResult = newAnagram.AnagramCheck("floabfu");
       //Assert
-      Assert.AreEqual(expectedResult, workingResult);
-      Console.WriteLine(workingResult);
+      Assert.IsTrue(anagramResult);
+      // Console.WriteLine(workingResult);
     }
   }
 }
